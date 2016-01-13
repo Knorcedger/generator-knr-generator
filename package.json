@@ -1,0 +1,39 @@
+{
+  "name": "generator-knr-generator",
+  "description": "A composite Yeoman generator to create other Yeoman generators",
+  "version": "0.1.0",
+  "author": "Knorcedger",
+  "bugs": {
+    "url": "https://github.com/Knorcedger/generator-knr-generator/issues"
+  },
+  "dependencies": {
+    "generator-angular-gitignore": "^0.2.5",
+    "generator-gitattributes": "^1.0.1",
+    "generator-knr-eslintrc": "^0.1.3",
+    "generator-license": "^3.0.0",
+    "generator-travis": "^1.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-google": "^0.3.0"
+  },
+  "files": [
+    "app"
+  ],
+  "homepage": "https://github.com/Knorcedger/generator-knr-generator#readme",
+  "keywords": [
+    "generator",
+    "yeoman",
+    "yeoman-generator",
+    "yo"
+  ],
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Knorcedger/generator-knr-generator.git"
+  },
+  "scripts": {
+    "test": "eslint app/"
+  }
+}
