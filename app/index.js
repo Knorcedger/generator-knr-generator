@@ -25,7 +25,7 @@ module.exports = generators.Base.extend({
 		},
 		travis: function() {
 			this.composeWith('knr-generator:travis', {}, {
-				local: require.resolve('generator-travis')
+				local: require.resolve('generator-travis/generators/app')
 			});
 		}
 	}
