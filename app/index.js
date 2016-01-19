@@ -2,6 +2,23 @@
 var generators = require('yeoman-generator');
 
 module.exports = generators.Base.extend({
+	initializing: {
+		gitInit: function() {
+			this.spawnCommandSync('git', ['init']);
+		},
+		npmInit: function() {
+			this.composeWith('knr-generator:npm-init', {}, {
+				local: require.resolve('generator-npm-init')
+			});
+		}
+	},
+	prompting: {
+		gitRemote: function() {
+			this.composeWith('knr-generator:git-remote', {}, {
+				local: require.resolve('generator-git-remote')
+			});
+		}
+	},
 	writing: {
 		angularGitignore: function() {
 			this.composeWith('knr-generator:angular-gitignore', {}, {
@@ -16,6 +33,11 @@ module.exports = generators.Base.extend({
 		gitattributes: function() {
 			this.composeWith('knr-generator:gitattributes', {}, {
 				local: require.resolve('generator-gitattributes')
+			});
+		},
+		editorconfig: function() {
+			this.composeWith('knr-generator:editorconfig', {}, {
+				local: require.resolve('generator-editorconfig')
 			});
 		},
 		license: function() {
