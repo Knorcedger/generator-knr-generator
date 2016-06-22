@@ -1,7 +1,6 @@
 # generator-knr-generator [![Build Status](https://travis-ci.org/Knorcedger/generator-knr-generator.png?branch=master)](https://travis-ci.org/Knorcedger/generator-knr-generator)
 
-A composite Yeoman generator to create other Yeoman generators,
-or bootstrap a project.  
+A composite Yeoman generator to bootstrap a project.  
 Built for my own needs, but feel free to use it if it fits yours as well.  
 Check the dependencies below to see what subgenerators are called.
 
