@@ -17,7 +17,7 @@
     "generator-travis": "^1.2.2"
   },
   "devDependencies": {
-    "eslint": "^1.10.3",
+    "eslint": "^3.6.0",
     "eslint-config-google": "^0.3.0"
   },
   "files": [
